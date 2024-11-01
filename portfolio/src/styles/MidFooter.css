@@ -1,0 +1,10 @@
+.mid {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    margin-top: 60px;
+    border-top: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

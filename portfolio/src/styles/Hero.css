@@ -1,0 +1,67 @@
+.hero {
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    align-items: center;
+    position: relative; /* Added this for positioning context */
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.left__pane img {
+    margin-left: 50px;
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 100%;
+    object-fit: contain;
+    z-index: 100; /* Keep this higher */
+    position: relative; /* Ensure it's positioned above the marquee */
+    @media(max-width: 768px) {
+        margin-left: 0px;
+    }
+}
+
+.right__pane {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 50vh;
+    min-height: 200px;
+    width: 80%;
+    align-items: left;
+    justify-content: center;
+    padding-left: 100px;
+    font-family: math;
+    border: none;
+    border-radius: 100px;
+    margin-right: 40px;
+    margin-left: -40px;
+    z-index: 100;
+    position: relative;
+    line-height: 3;
+    @media (max-width: 768px) {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 100px;
+        line-height: 1.5;
+    }
+}
+
+.right__pane a {
+    text-decoration: none;
+    color: rgb(118, 109, 98);
+    font-weight: bold;
+}
+
+marquee {
+    margin-top: -550px; /* Adjusts the vertical position */
+    position: absolute; /* Position the marquee absolutely */
+    font-size: 96px; /* Ensure units are specified */
+    color: rgb(118, 109, 98); /* Optional: Set the color for better visibility */
+    font-family: math;    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Optional: Add a shadow for effect */
+    z-index: 0; /* Lower z-index */
+}
